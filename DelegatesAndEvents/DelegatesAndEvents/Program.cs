@@ -14,7 +14,10 @@ namespace DelegatesAndEvents
             Console.WriteLine("Delegate");
             Operation obj = new Operation(Addition);//Delegate Installation
             Console.WriteLine("Addition is : {0}", obj(25, 67));
-            Console.WriteLine();
+            Console.WriteLine("Using Single Cast Delegates");
+            ArrayDelegates single = new ArrayDelegates();
+            single.ImplementDelegates();
+            Console.WriteLine("Using Multi Cast Delegates");
             MultiCastDelegates multi = new MultiCastDelegates();
             multi.ImplementDelegate();
         }        
