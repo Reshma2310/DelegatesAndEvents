@@ -15,6 +15,8 @@ namespace DelegatesAndEvents
             Operation obj = new Operation(Addition);//Delegate Installation
             Console.WriteLine("Addition is : {0}", obj(25, 67));
             Console.WriteLine();
-        }
+            MultiCastDelegates multi = new MultiCastDelegates();
+            multi.ImplementDelegate();
+        }        
     }
 }
